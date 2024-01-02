@@ -1,0 +1,17 @@
+@mixin btn($border-width, $font-size, $color) {
+    border: $border-width solid yellow;
+    font-size: $font-size;
+    color: $color;
+}
+.btn-1 {
+    @include btn(2px, 18px, magenta);
+}
+.btn-2 {
+    @include btn(3px, 25px, red);
+}
+.btn-3 {
+    @include btn(4px, 30px, green);
+}
+.btn-4 {
+    @include btn(6px, 38px, black);
+}

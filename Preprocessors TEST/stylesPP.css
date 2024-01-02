@@ -1,0 +1,23 @@
+.btn-1 {
+  border: 2px solid yellow;
+  font-size: 18px;
+  color: magenta;
+}
+
+.btn-2 {
+  border: 3px solid yellow;
+  font-size: 25px;
+  color: red;
+}
+
+.btn-3 {
+  border: 4px solid yellow;
+  font-size: 30px;
+  color: green;
+}
+
+.btn-4 {
+  border: 6px solid yellow;
+  font-size: 38px;
+  color: black;
+}/*# sourceMappingURL=stylesPP.css.map */
