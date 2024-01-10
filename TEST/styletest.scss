@@ -41,18 +41,19 @@ a {
  transition: all .25s ease;
 }
 
-.li-navigation-panel:last-child a {
- background-color: #dd3d53;
- border-radius: 3px;
- line-height: 30px;
- height: 30px;
- padding: 5px 10px;
- margin-left: 70px;
- transition: all .25s ease;
-}
-
-.li-navigation-panel:last-child a:hover {
- background-color: #c9233a;
+.li-navigation-panel:last-child {
+ a {
+  background-color: #dd3d53;
+  border-radius: 3px;
+  line-height: 30px;
+  height: 30px;
+  padding: 5px 10px;
+  margin-left: 70px;
+  transition: all .25s ease;
+ }
+ a:hover {
+  background-color: #c9233a;
+ }
 }
 
 .logo-nav {
