@@ -1,15 +1,17 @@
+@mixin flexy {display: flex;}
+
 body {
  margin: 0;
  font-family: 'Oswald', sans-serif;
 }
 
 .navigation-panel {
+ @include flexy;
  list-style-type: none;
  justify-content: space-between;
  margin: 0;
  line-height: 60px;
  font-size: 14px;
- display: flex;
  background-color: white;
  height: 60px;
  padding-left: 13px;
@@ -62,5 +64,5 @@ a {
 }
 
 .list-nav {
- display: flex;
+ @include flexy;
 }
