@@ -5,6 +5,10 @@ body {
  font-family: 'Oswald', sans-serif;
 }
 
+.burger-icon {
+ display: none;
+}
+
 .navigation-panel {
  @include flexy;
  list-style-type: none;
@@ -27,10 +31,6 @@ a {
  transition: all .25s ease;
 }
 
-.a-links:hover::after {
- transform: scaleX(1);
-}
-
 .a-links::after {
  content: "";
  height: 2px;
@@ -41,6 +41,10 @@ a {
  left: 0;
  transform: scaleX(0);
  transition: all .25s ease;
+}
+
+.a-links:hover::after {
+ transform: scaleX(1);
 }
 
 .li-navigation-panel:last-child {
@@ -65,4 +69,13 @@ a {
 
 .list-nav {
  @include flexy;
+}
+
+@media screen and (max-width: 855px) {
+ .burger-icon {
+  display: block;
+ }
+ .list-nav {
+  display: none;
+ }
 }

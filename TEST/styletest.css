@@ -3,13 +3,17 @@ body {
   font-family: "Oswald", sans-serif;
 }
 
+.burger-icon {
+  display: none;
+}
+
 .navigation-panel {
+  display: flex;
   list-style-type: none;
   justify-content: space-between;
   margin: 0;
   line-height: 60px;
   font-size: 14px;
-  display: flex;
   background-color: white;
   height: 60px;
   padding-left: 13px;
@@ -25,10 +29,6 @@ a {
   transition: all 0.25s ease;
 }
 
-.a-links:hover::after {
-  transform: scaleX(1);
-}
-
 .a-links::after {
   content: "";
   height: 2px;
@@ -41,6 +41,10 @@ a {
   transition: all 0.25s ease;
 }
 
+.a-links:hover::after {
+  transform: scaleX(1);
+}
+
 .li-navigation-panel:last-child a {
   background-color: #dd3d53;
   border-radius: 3px;
@@ -50,7 +54,6 @@ a {
   margin-left: 70px;
   transition: all 0.25s ease;
 }
-
 .li-navigation-panel:last-child a:hover {
   background-color: #c9233a;
 }
@@ -62,4 +65,13 @@ a {
 
 .list-nav {
   display: flex;
+}
+
+@media screen and (max-width: 855px) {
+  .burger-icon {
+    display: block;
+  }
+  .list-nav {
+    display: none;
+  }
 }/*# sourceMappingURL=styletest.css.map */
