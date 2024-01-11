@@ -1,4 +1,5 @@
 @mixin flexy {display: flex;}
+@mixin nothing {display: none;}
 
 body {
  margin: 0;
@@ -6,7 +7,7 @@ body {
 }
 
 .burger-icon {
- display: none;
+ @include nothing;
 }
 
 .navigation-panel {
@@ -76,6 +77,6 @@ a {
   display: block;
  }
  .list-nav {
-  display: none;
+  @include nothing;
  }
 }
