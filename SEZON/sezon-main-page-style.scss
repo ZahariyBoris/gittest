@@ -75,6 +75,7 @@ a {
 @media screen and (max-width: 855px) {
  .burger-icon {
   display: block;
+  cursor: pointer;
  }
  .list-nav {
   @include nothing;
