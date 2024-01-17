@@ -1,5 +1,5 @@
-$white: #fefefe;
-$black: black;
+$SecondaryNavPanelColor: #fefefe;
+$NavPanelColor: black;
 
 * {
  margin: 0;
@@ -11,13 +11,13 @@ $black: black;
 }
 
 body {
- background: $white;
+ background: $SecondaryNavPanelColor;
 }
 
 header {
  width: 100%;
  height: 80px;
- background: $black;
+ background: $NavPanelColor;
  display: flex;
  align-items: center;
  justify-content: space-between;
@@ -27,7 +27,7 @@ header {
 .logo {
  font-size: 28px;
  font-weight: bold;
- color: $white;
+ color: $SecondaryNavPanelColor;
 }
 
 .burger-icon {
@@ -41,7 +41,7 @@ header {
 
  ul li a {
   display: block;
-  color: $white;
+  color: $SecondaryNavPanelColor;
   font-size: 20px;
   padding: 10px 25px;
   border-radius: 50px;
@@ -50,13 +50,13 @@ header {
 
  }
  ul li a.active {
-  color: $black;
-  background: $white;
+  color: $NavPanelColor;
+  background: $SecondaryNavPanelColor;
  }
  
  ul li a:hover {
-  color: $black;
-  background: $white;
+  color: $NavPanelColor;
+  background: $SecondaryNavPanelColor;
  }
 }
 
@@ -80,7 +80,7 @@ header {
   .line {
    width: 30px;
    height: 3px;
-   background: $white;
+   background: $SecondaryNavPanelColor;
    margin: 6px 0;
   }
  }
@@ -92,7 +92,7 @@ header {
   left: 0;
   right: 0;
   width: 100vw;
-  background: $black;
+  background: $NavPanelColor;
   transition: 0.2s;
   overflow: hidden;
 
