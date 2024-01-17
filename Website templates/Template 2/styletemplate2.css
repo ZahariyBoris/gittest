@@ -43,11 +43,11 @@ header {
   transition: 0.2s;
   margin: 0 5px;
 }
-.nav-bar ul li a.active {
+.nav-bar ul li a:hover {
   color: black;
   background: #fefefe;
 }
-.nav-bar ul li a:hover {
+.nav-bar ul li a.active {
   color: black;
   background: #fefefe;
 }

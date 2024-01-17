@@ -48,13 +48,13 @@ header {
   transition: 0.2s;
   margin: 0 5px;
 
- }
- ul li a.active {
-  color: $NavPanelColor;
-  background: $SecondaryNavPanelColor;
+  &:hover {
+   color: $NavPanelColor;
+   background: $SecondaryNavPanelColor;
+  }
  }
  
- ul li a:hover {
+ ul li a.active {
   color: $NavPanelColor;
   background: $SecondaryNavPanelColor;
  }
