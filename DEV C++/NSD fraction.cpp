@@ -11,26 +11,22 @@ int findNSD(int a, int b) {
     return a;
 }
 
-int simplify(int chyselnyk, int znamennyk) {
-    int NSD = findNSD(chyselnyk, znamennyk);
-
-    chyselnyk /= NSD;
-    znamennyk /= NSD;
-}
-
 int main() {
-	setlocale(LC_ALL, "UKRAINIAN");
+    setlocale(LC_ALL, "UKRAINIAN");
 	
-	int upperNumber, lowerNumber;
+    int upperNumber, lowerNumber;
 	
-	cout << "Ââåä³òü ÷èñåëüíèê: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã·Ã¨Ã±Ã¥Ã«Ã¼Ã­Ã¨Ãª: ";
     cin >> upperNumber;
-    cout << "Ââåä³òü çíàìåííèê: ";
+    cout << "Ã‚Ã¢Ã¥Ã¤Â³Ã²Ã¼ Ã§Ã­Ã Ã¬Ã¥Ã­Ã­Ã¨Ãª: ";
     cin >> lowerNumber;
     
-    int result = simplify(upperNumber, lowerNumber);
+    int NSD = findNSD(upperNumber, lowerNumber);
+
+    upperNumber /= NSD;
+    lowerNumber /= NSD;
     
-    cout << "Ñêîðî÷åíèé äð³á: " << result << endl;
+    cout << "Ã‘ÃªÃ®Ã°Ã®Ã·Ã¥Ã­Ã¨Ã© Ã¤Ã°Â³Ã¡: " << upperNumber << " / " << lowerNumber << endl;
     
     return 0;
 }
