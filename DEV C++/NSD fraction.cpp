@@ -11,26 +11,22 @@ int findNSD(int a, int b) {
     return a;
 }
 
-int simplify(int chyselnyk, int znamennyk) {
-    int NSD = findNSD(chyselnyk, znamennyk);
-
-    chyselnyk /= NSD;
-    znamennyk /= NSD;
-}
-
 int main() {
-	setlocale(LC_ALL, "UKRAINIAN");
+    setlocale(LC_ALL, "UKRAINIAN");
 	
-	int upperNumber, lowerNumber;
+    int upperNumber, lowerNumber;
 	
-	cout << "¬вед≥ть чисельник: ";
+    cout << "¬вед≥ть чисельник: ";
     cin >> upperNumber;
     cout << "¬вед≥ть знаменник: ";
     cin >> lowerNumber;
     
-    int result = simplify(upperNumber, lowerNumber);
+    int NSD = findNSD(upperNumber, lowerNumber);
+
+    upperNumber /= NSD;
+    lowerNumber /= NSD;
     
-    cout << "—корочений др≥б: " << result << endl;
+    cout << "—корочений др≥б: " << upperNumber << " / " << lowerNumber << endl;
     
     return 0;
 }
