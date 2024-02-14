@@ -16,9 +16,9 @@ int main() {
 	
     int upperNumber, lowerNumber;
 	
-    cout << "Введіть чисельник: ";
+	cout << "пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ: ";
     cin >> upperNumber;
-    cout << "Введіть знаменник: ";
+    cout << "Г‚ГўГҐГ¤ВіГІГј Г§Г­Г Г¬ГҐГ­Г­ГЁГЄ: ";
     cin >> lowerNumber;
     
     int NSD = findNSD(upperNumber, lowerNumber);
@@ -26,7 +26,7 @@ int main() {
     upperNumber /= NSD;
     lowerNumber /= NSD;
     
-    cout << "Скорочений дріб: " << upperNumber << " / " << lowerNumber << endl;
+    cout << "пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ: " << result << endl;
     
     return 0;
 }
